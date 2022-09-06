@@ -47,11 +47,6 @@ const Navbar = () => {
             Resorts
           </Link>
         </li>
-        <li className="nav-link">
-          <Link to="about" smooth={true} duration={500}>
-            About Us
-          </Link>
-        </li>
       </ul>
 
       <div onClick={handleClick} className="md:hidden z-10">
@@ -101,17 +96,6 @@ const Navbar = () => {
             duration={500}
           >
             Resorts
-          </Link>
-        </li>
-        <li className="py-6 text-4xl">
-          <Link
-            onClick={handleClick}
-            to="about"
-            smooth={true}
-            offset={40}
-            duration={500}
-          >
-            About
           </Link>
         </li>
       </ul>

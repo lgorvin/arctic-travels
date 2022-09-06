@@ -16,7 +16,6 @@ const Home = () => {
         <h1 className="text-4xl sm:text-7xl font-bold text-blue-900">
           Plan the perfect winter trip.
         </h1>
-        <h2 className="text-4xl sm:text-7xl font-bold text-blue-300 "></h2>
         <p className="text-xl text-white lg:text-black  py-4 max-w-[700px]">
           Easily plan your ideal{" "}
           <span className="text-white lg:text-blue-900 font-bold italic">
@@ -33,7 +32,7 @@ const Home = () => {
                 : "hidden"
             }
           >
-            <Link to="work" smooth={true} duration={500}>
+            <Link onClick={handleClick} to="work" smooth={true} duration={500}>
               Book Now!
             </Link>
             <span className="group-hover:rotate-90 duration-200">
@@ -47,8 +46,14 @@ const Home = () => {
                 : "flex items-center justify-center py-10 opacity-90"
             }
           >
+            <button
+              onClick={handleClick}
+              className="hidden md:flex bg-blue-900 text-white py-3 px-2 rounded-l-md hover:bg-blue-700"
+            >
+              Back
+            </button>
             <div
-              class="inline-flex shadow-md hover:shadow-lg focus:shadow-lg"
+              class="hidden md:inline-flex shadow-md hover:shadow-lg focus:shadow-lg"
               role="group"
             >
               <button
@@ -56,7 +61,7 @@ const Home = () => {
                 class="rounded-l-lg inline-block text-sm sm:text-xl px-6 py-2.5 bg-blue-900 text-white font-medium leading-tight uppercase hover:bg-blue-700 focus:bg-blue-700 focus:outline-none focus:ring-0 active:bg-blue-500 transition duration-150 ease-in-out"
               >
                 Region
-                <div class="mb-3 xl:w-40 pt-2">
+                <div class="mb-3 w-10 md:w-40 pt-2">
                   <div class="input-group relative flex flex-wrap items-stretch w-20 sm:w-40 mb-4 rounded">
                     <input
                       type="search"
@@ -93,7 +98,7 @@ const Home = () => {
                 class=" inline-block px-6 py-2.5 bg-blue-900 text-white font-medium text-sm sm:text-xl leading-tight uppercase hover:bg-blue-700 focus:bg-blue-700 focus:outline-none focus:ring-0 active:bg-blue-800 transition duration-150 ease-in-out"
               >
                 Date
-                <div class="mb-3 xl:w-40 pt-2">
+                <div class="mb-3 w-10 md:w-40 pt-2">
                   <div class="input-group relative flex flex-wrap items-stretch w-20 sm:w-40 mb-4 rounded">
                     <input
                       type="search"
@@ -130,7 +135,7 @@ const Home = () => {
                 class="inline-block px-6 py-2.5 bg-blue-900 text-white font-medium text-sm sm:text-xl leading-tight uppercase hover:bg-blue-700 focus:bg-blue-700 focus:outline-none focus:ring-0 active:bg-blue-800 transition duration-150 ease-in-out"
               >
                 People
-                <div class="mb-3 xl:w-40 pt-2">
+                <div class="mb-3 w-10 md:w-40 pt-2">
                   <div class="input-group relative flex flex-wrap items-stretch w-20 sm:w-40 mb-4 rounded">
                     <input
                       type="search"

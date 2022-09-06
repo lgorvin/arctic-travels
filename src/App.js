@@ -1,4 +1,4 @@
-import About from "./components/About";
+import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Lodging from "./components/Lodging";
 import Navbar from "./components/Navbar";
@@ -13,7 +13,7 @@ function App() {
       <Regions />
       <Lodging />
       <Resorts />
-      <About />
+      <Footer />
     </div>
   );
 }
